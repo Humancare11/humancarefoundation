@@ -1,0 +1,318 @@
+/* ============================
+   REMOVE HORIZONTAL SCROLL
+============================ */
+body {
+  overflow-x: hidden !important;
+}
+
+/* ============================
+   HEADER
+============================ */
+.header {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* ============================
+   CONTAINER
+============================ */
+.header-container {
+  width: 90%;
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ============================
+   LOGO
+============================ */
+.header-logo img {
+  width: 150px;
+  object-fit: contain;
+}
+
+/* ============================
+   DESKTOP NAV MENU
+============================ */
+.nav-menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav-menu ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0 15px;
+}
+
+.nav-menu ul li:hover > a {
+  color: #d83239;
+}
+
+/* ============================
+   JOIN BUTTON
+============================ */
+.join-btn {
+  background: #d83239;
+  color: #fff;
+  padding: 10px 26px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(212, 38, 40, 0.25);
+}
+
+/* ============================
+   MOBILE MENU ICON
+============================ */
+.mobile-menu-icon {
+  display: none;
+  cursor: pointer;
+  z-index: 3001;
+}
+
+/* MOBILE JOIN BTN HIDE DESKTOP */
+.mobile-join-btn {
+  display: none;
+}
+
+/* ============================
+   RESPONSIVE MENU
+============================ */
+@media (max-width: 992px) {
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .header-right {
+    display: none;
+  }
+
+  /* FULLSCREEN MOBILE MENU */
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    padding: 120px 30px 40px;
+    transition: 0.4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    transform: translateY(-100%);
+    z-index: 3000;
+  }
+
+  .nav-menu.open {
+    transform: translateY(0);
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .nav-menu ul li a {
+    font-size: 20px;
+  }
+
+  .mobile-join-btn {
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+  }
+}
+
+/* ============================
+   MENU OVERLAY (BG DIMMER)
+============================ */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 2500;
+}
+
+.header-right a,
+nav a {
+  text-decoration: none;
+}
+
+/* ============================
+   DROPDOWN MENU
+============================ */
+.nav-menu ul li {
+  position: relative;
+}
+
+/* Dropdown container */
+.dropdown-menu {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #e6e9f2;
+  padding: 0;
+  min-width: 240px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: all 0.25s ease;
+  z-index: 999;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Dropdown items */
+.dropdown-menu li {
+  width: 100%;
+  list-style: none;
+  border-bottom: 1px solid #eef1f5;
+}
+
+.dropdown-menu li:last-child {
+  border-bottom: none;
+}
+
+/* Dropdown links */
+.dropdown-menu li a {
+  display: block;
+  padding: 12px 18px;
+  font-size: 15px;
+  color: #0a2b5e;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: .2s ease;
+}
+
+.dropdown-menu li a:hover {
+  background: #eef4ff;
+  color: #d83239;
+  padding-left: 22px; /* small slide animation */
+}
+
+/* ============================
+   MOBILE DROPDOWN
+============================ */
+@media (max-width: 992px) {
+  .dropdown-menu {
+    position: relative;
+    top: 0;
+    left: 0;
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    padding-left: 15px;
+  }
+
+  .dropdown-menu li {
+    border-bottom: 1px solid #eee;
+  }
+
+  .dropdown-menu li a {
+    padding: 10px 0 10px 10px;
+    font-size: 17px;
+  }
+
+  .dropdown-menu li a:hover {
+    padding-left: 14px;
+    background: none;
+  }
+}
+/* ========== FIXED VERTICAL DROPDOWN MENU ========== */
+
+.nav-menu ul li {
+  position: relative;
+}
+
+/* Dropdown container */
+.dropdown-menu {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #e6e9f2;
+  padding: 0;
+  min-width: 240px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+
+  display: flex;
+  flex-direction: column;   /* ⭐ FORCE VERTICAL STACK */
+  gap: 0;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: all 0.25s ease;
+  z-index: 999;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Dropdown items */
+.dropdown-menu li {
+  width: 100%;
+  border-bottom: 1px solid #eef1f5;
+  list-style: none;
+}
+
+.dropdown-menu li:last-child {
+  border-bottom: none;
+}
+
+/* Dropdown links */
+.dropdown-menu{
+  padding: 10px 10px !important;
+}
+.dropdown-menu li a {
+  display: block;
+padding: 5px !important;
+  font-size: 15px;
+  color: #0a2b5e;
+  text-decoration: none;
+  transition: 0.2s ease;
+  white-space: nowrap;
+}
+
+.dropdown-menu li a:hover {
+  background: #fff !important;
+  color: #d83239;
+  padding-left: 22px;
+}

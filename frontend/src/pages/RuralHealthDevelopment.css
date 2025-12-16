@@ -1,0 +1,179 @@
+/* ===== RURAL HEALTH HERO SECTION ===== */
+
+.rural-hero {
+  padding: 30px 90px;
+  background-color: var(--blue);
+  border-bottom: 1px solid #e3e8ff;
+}
+
+/* GRID */
+.rural-hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 50px;
+}
+
+/* LEFT CONTENT */
+.rural-hero-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--red);
+  margin-bottom: 12px;
+}
+
+.rural-hero-content p {
+  font-size: 20px;
+  color: #e8e8e8;
+  max-width: 520px;
+  line-height: 1.6;
+}
+
+/* RIGHT IMAGE */
+.rural-hero-image img {
+  width: 70%;
+  max-width: 420px;
+  object-fit: contain;
+  display: block;
+  margin-left: auto;
+  border-radius: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .rural-hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .rural-hero-image img {
+    margin: 20px auto 0;
+    width: 85%;
+  }
+
+  .rural-hero-content h1 {
+    font-size: 38px;
+  }
+
+  .rural-hero-content p {
+    font-size: 18px;
+  }
+}
+
+
+/* INTRO */
+.rural-intro {
+  padding: 70px 0 20px;
+  text-align: center;
+}
+
+.rural-intro h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--blue);
+  margin-bottom: 14px;
+}
+
+.rural-intro p {
+  font-size: 18px;
+  color: #555;
+  max-width: 860px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* SERVICES GRID */
+.rural-services {
+  padding: 60px 0 80px;
+}
+
+.rural-grid {
+  display: grid;
+  gap: 28px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.rural-card {
+  background: white;
+  padding: 32px;
+  border-radius: 18px;
+  border: 1px solid #dde6ff;
+  box-shadow: 0 10px 26px rgba(0,0,0,0.07);
+  transition: 0.3s ease;
+}
+
+.rural-card:hover {
+  transform: translateY(-6px);
+  border-color: #ffb4b4;
+}
+
+.rural-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--blue);
+  margin-bottom: 10px;
+}
+
+.rural-card p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* IMPACT */
+.rural-impact {
+  padding: 80px 0;
+  background: #f9fbff;
+  text-align: center;
+}
+
+.rural-impact h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--blue);
+  margin-bottom: 14px;
+}
+
+.rural-impact p {
+  font-size: 18px;
+  color: #555;
+  max-width: 850px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* CTA */
+.rural-cta {
+  padding: 90px 0;
+  background: var(--blue);
+  color: white;
+  text-align: center;
+}
+
+.rural-cta h2 {
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.rural-cta p {
+  font-size: 18px;
+  margin-top: 8px;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rural-cta .cta-buttons {
+  margin-top: 26px;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .rural-hero h1 {
+    font-size: 38px;
+  }
+}

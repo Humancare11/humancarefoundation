@@ -1,0 +1,373 @@
+/* ===== GET INVOLVED HERO SECTION ===== */
+
+.getinvolved-hero {
+  padding: 30px 90px;
+  background-color: var(--blue);
+  border-bottom: 1px solid #e3e8ff;
+}
+
+/* GRID */
+.getinvolved-hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 50px;
+}
+
+/* LEFT CONTENT */
+.getinvolved-hero-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--red);
+  margin-bottom: 12px;
+}
+
+.getinvolved-hero-content p {
+  font-size: 20px;
+  color: #e8e8e8;
+  max-width: 520px;
+  line-height: 1.6;
+}
+
+/* RIGHT IMAGE */
+.getinvolved-hero-image img {
+  width: 70%;
+  max-width: 420px;
+  object-fit: contain;
+  display: block;
+  margin-left: auto;
+  border-radius: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .getinvolved-hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .getinvolved-hero-image img {
+    margin: 20px auto 0;
+    width: 85%;
+  }
+
+  .getinvolved-hero-content h1 {
+    font-size: 38px;
+  }
+
+  .getinvolved-hero-content p {
+    font-size: 18px;
+  }
+}
+
+
+/* ================= DONATE ================= */
+.donate-section {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.donate-section h2 {
+  font-size: 36px;
+  color: var(--blue);
+  margin-bottom: 14px;
+}
+
+.donate-desc {
+  font-size: 18px;
+  color: #555;
+  max-width: 750px;
+  margin: 0 auto 30px;
+}
+
+.donate-grid {
+  display: grid;
+  gap: 26px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin-top: 24px;
+}
+
+.donate-card {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  border: 1px solid #dde6ff;
+  box-shadow: 0 10px 26px rgba(0,0,0,0.07);
+}
+
+.donate-card h4 {
+  font-size: 22px;
+  color: var(--blue);
+  margin-bottom: 8px;
+}
+
+.donate-options {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* ================= VOLUNTEER ================= */
+.volunteer-section {
+  padding: 80px 0;
+}
+
+.volunteer-section h2 {
+  font-size: 36px;
+  text-align: center;
+  color: var(--blue);
+  margin-bottom: 14px;
+  text-align: left;
+}
+
+.volunteer-desc {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 28px;
+  text-align: left;
+}
+
+.volunteer-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-bottom: 40px;
+}
+
+.volunteer-card {
+  background: #f4f8ff;
+  padding: 16px 20px;
+  border-radius: 40px;
+  text-align: center;
+  font-weight: 600;
+  border: 1px solid #cfe2ff;
+}
+
+/* FORM */
+.volunteer-form-box {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 36px;
+  border-radius: 18px;
+  border: 1px solid #dde6ff;
+  box-shadow: 0 10px 26px rgba(0,0,0,0.07);
+}
+
+.volunteer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.volunteer-form input,
+.volunteer-form select,
+.volunteer-form textarea {
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 1px solid #cfdcff;
+  font-size: 16px;
+}
+
+/* TESTIMONIAL */
+.testimonial-box {
+  margin-top: 50px;
+  background: #f9fafc;
+  padding: 30px;
+  border-radius: 18px;
+  text-align: center;
+  border: 1px solid #dde6ff;
+}
+
+/* ================= PARTNER ================= */
+.partner-section {
+  padding: 90px 0;
+  background: var(--blue);
+  text-align: center;
+  color: white;
+}
+
+.partner-section h2 {
+  font-size: 36px;
+  margin-bottom: 14px;
+}
+
+.partner-desc {
+  font-size: 18px;
+  max-width: 760px;
+  margin: 0 auto 40px;
+}
+
+.partner-grid {
+  display: grid;
+  gap: 28px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.partner-card {
+  background: white;
+  color: #333;
+  padding: 30px;
+  border-radius: 18px;
+}
+
+/* ================= BUTTON SUPPORT ================= */
+.btn-outline-blue {
+  border: 2px solid var(--blue);
+  color: var(--blue);
+  background: transparent;
+  padding: 12px 32px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn-outline-blue:hover {
+  background: var(--blue);
+  color: white;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .getinvolved-hero h1 {
+    font-size: 38px;
+  }
+}
+/* TWO COLUMN VOLUNTEER LAYOUT */
+.volunteer-two-col {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+/* LEFT */
+.volunteer-left h3 {
+  font-size: 26px;
+  color: var(--blue);
+  margin-bottom: 18px;
+}
+
+/* RIGHT FORM BOX (already styled, just ensure width) */
+.volunteer-form-box {
+  width: 100%;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .volunteer-two-col {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.testimonial-carousel-section {
+  padding: 90px 0;
+  text-align: center;
+}
+
+.testimonial-carousel-section h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--blue);
+  margin-bottom: 10px;
+}
+
+.testimonial-desc {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* CAROUSEL BOX */
+.testimonial-carousel-box {
+  position: relative;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.testimonial-slide {
+  background: white;
+  padding: 36px;
+  border-radius: 18px;
+  border: 1px solid #dde6ff;
+  box-shadow: 0 10px 26px rgba(0,0,0,0.07);
+  animation: fadeSlide 0.3s ease;
+}
+
+.testimonial-text {
+  font-size: 18px;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+.testimonial-slide h4 {
+  font-size: 20px;
+  color: var(--blue);
+  margin-bottom: 4px;
+}
+
+.testimonial-slide span {
+  font-size: 14px;
+  color: #888;
+}
+
+/* BUTTONS */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--red);
+  color: white;
+  border: none;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.carousel-btn:hover {
+  background: #b40000;
+}
+
+.carousel-btn.left {
+  left: -18px;
+}
+
+.carousel-btn.right {
+  right: -18px;
+}
+
+/* ANIMATION */
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .testimonial-slide {
+    padding: 26px;
+  }
+
+  .carousel-btn.left {
+    left: -10px;
+  }
+
+  .carousel-btn.right {
+    right: -10px;
+  }
+}

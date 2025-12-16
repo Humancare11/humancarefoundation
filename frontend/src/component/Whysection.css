@@ -1,0 +1,172 @@
+/* =======================why choose us======================= */
+/* SECTION */
+.why-section {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.why-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* HEADER */
+.why-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.why-header h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #0a2b5e;
+  margin-bottom: 10px;
+}
+
+.why-line {
+  width: 80px;
+  height: 4px;
+  background: #d60000;
+  margin: 0 auto 20px;
+}
+
+.why-header p {
+  font-size: 18px;
+  color: #666;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* GRID */
+.why-grid {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* CARD */
+.why-card {
+  position: relative;
+  background: linear-gradient(to bottom right, #e8f0ff, #ffffff);
+  border: 1px solid #cfe2ff;
+  padding: 32px;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.why-card:hover {
+  border-color: #ff9a9a;
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.08);
+}
+
+/* Hover Gradient Overlay */
+.why-hover-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom right, rgba(255,0,0,0), rgba(255,0,0,0.08));
+  opacity: 0;
+  transition: 0.3s ease;
+  border-radius: 14px;
+}
+
+.why-card:hover .why-hover-bg {
+  opacity: 1;
+}
+
+.why-card-content {
+  position: relative;
+}
+
+/* ICON */
+.why-icon {
+  width: 64px;
+  height: 64px;
+  background: var(--blue);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: 0.3s ease;
+}
+
+.why-card:hover .why-icon {
+  background: #d60000;
+}
+
+/* TITLE */
+.why-card-content h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0a2b5e;
+  margin-bottom: 10px;
+  transition: 0.3s ease;
+}
+
+.why-card:hover h3 {
+  color: #d60000;
+}
+
+/* DESCRIPTION */
+.why-card-content p {
+  color: #444;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* BOTTOM BOX */
+.why-bottom-box {
+  margin-top: 50px;
+  padding: 30px;
+  color: red;
+  border-radius: 18px;
+  border: 1px solid var(--blue);
+  text-align: center;
+}
+
+.why-bottom-box p {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.2;
+  max-width: 850px;
+  margin: 0 auto;
+    text-shadow: 0px 2px 6px rgba(0,0,0,0.25);
+
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .why-header h2 {
+    font-size: 28px;
+  }
+
+  .why-card {
+    padding: 24px;
+  }
+
+  .why-icon {
+    width: 55px;
+    height: 55px;
+  }
+}
+.buttons {
+   display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 22px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    background: #d83239 !important;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.3s 
+ease;
+    backdrop-filter: blur(4px);
+
+}
+

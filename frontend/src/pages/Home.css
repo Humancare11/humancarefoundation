@@ -1,0 +1,187 @@
+/* ======================= IMPACT PHILOSOPHY ========================== */
+
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.impact-section {
+  padding: 80px 0;
+}
+
+.impact-section h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #0a2b5e;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.impact-text {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* ✅ MAIN FLOW */
+.impact-flow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: nowrap;
+}
+
+/* ✅ CARD */
+.impact-card {
+  background: linear-gradient(to bottom right, #e8f0ff, #ffffff);
+  border: 1px solid #cfe2ff;
+  padding: 32px;
+  border-radius: 14px;
+  width: 260px;
+  text-align: center;
+  transition: 0.3s ease;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.impact-card:hover {
+  border-color: #ff9a9a;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.impact-card h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0a2b5e;
+  margin-bottom: 8px;
+}
+
+.impact-card:hover h3 {
+  color: #d60000;
+}
+
+.impact-card p {
+  color: #444;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* ✅ ARROW */
+.impact-arrow {
+  font-size: 36px;
+  color: #d60000;
+  font-weight: bold;
+}
+
+/* ✅ BELOW 1170px = PURE VERTICAL */
+@media (max-width: 1170px) {
+  .impact-flow {
+    flex-direction: column;
+  }
+
+  .impact-arrow {
+    transform: rotate(90deg);
+  }
+}
+
+/* ======================= GET INVOLVED ========================== */
+
+.involved-section {
+  padding: 80px 0;
+}
+
+.involved-section h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #0a2b5e;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.involved-cards {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.involved-card {
+  background: linear-gradient(to bottom right, #e8f0ff, #ffffff);
+  border: 1px solid #cfe2ff;
+  padding: 32px;
+  border-radius: 16px;
+  transition: 0.3s ease;
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.06);
+}
+
+.involved-card:hover {
+  border-color: #ff9a9a;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.involved-card h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0a2b5e;
+  transition: 0.3s ease;
+}
+
+.involved-card:hover h3 {
+  color: #d60000;
+}
+
+.involved-card p {
+  color: #444;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 12px 0 20px;
+}
+
+/* Buttons */
+.btn-primary {
+  display: inline-block;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Red Filled Button */
+.btn-primary {
+  background: #d60000;
+  color: #fff;
+  border: 2px solid #d60000;
+}
+
+.btn-primary:hover {
+  opacity: 0.8;
+}
+
+/* Outline Button */
+.btn-outline {
+  background: #d60000 !important;
+  border: 2px solid #d60000;
+  color: #d60000;
+}
+
+.btn-outline:hover {
+  background: #d60000;
+  color: #fff !important;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .impact-section h2,
+  .involved-section h2 {
+    font-size: 28px;
+  }
+
+  .impact-card,
+  .involved-card {
+    padding: 26px;
+  }
+}

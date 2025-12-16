@@ -1,0 +1,140 @@
+/* ===== WORK / IMPACT HERO SECTION ===== */
+.btn-outline {
+  background: #d60000 !important;
+  border: 2px solid #d60000;
+  color: #fafafa;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+.work-hero {
+  padding: 30px 90px;
+  background-color: var(--blue);
+  border-bottom: 1px solid #e3e8ff;
+}
+
+/* GRID */
+.work-hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 50px;
+}
+
+/* LEFT CONTENT */
+.work-hero-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--red);
+  margin-bottom: 12px;
+}
+
+.work-hero-content p {
+  font-size: 20px;
+  color: #e8e8e8;
+  max-width: 520px;
+  line-height: 1.6;
+}
+
+/* RIGHT IMAGE */
+.work-hero-image img {
+  width: 70%;
+  max-width: 420px;
+  object-fit: contain;
+  display: block;
+  margin-left: auto;
+  border-radius: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .work-hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .work-hero-image img {
+    margin: 20px auto 0;
+    width: 85%;
+  }
+
+  .work-hero-content h1 {
+    font-size: 38px;
+  }
+
+  .work-hero-content p {
+    font-size: 18px;
+  }
+}
+
+/* SECTION WRAPPER → modern card */
+.card-section {
+  padding: 60px 0;
+}
+.card-section .program-flex {
+  border: 1px solid #dce6f7;
+  border-radius: 18px;
+  padding: 40px;
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+/* FLEX */
+.program-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* CONTENT */
+.program-content {
+  flex: 1;
+}
+.program-content h2 {
+  font-size: 30px;
+  color: #0a2b5e;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.program-content p {
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+.program-content ul {
+  margin-left: 20px;
+  font-size: 17px;
+  color: #333;
+  line-height: 1.7;
+}
+.program-content ul li {
+  margin-bottom: 8px;
+}
+
+/* IMAGE */
+.program-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.program-img img {
+  width: 95%;
+  max-width: 460px;
+  border-radius: 14px;
+  border: 1px solid #d9e2f1;
+  box-shadow: 0 5px 22px rgba(0,0,0,0.08);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .program-flex {
+    flex-direction: column !important;
+    text-align: center;
+  }
+  .program-img img {
+    width: 100%;
+  }
+}
+

@@ -1,0 +1,147 @@
+.stats-section {
+  padding: 80px 0;
+  background: var(--blue) !important;
+}
+.stats-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--blue);
+    z-index: -1;
+}
+.stats-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.stats-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.stats-header h2 {
+  font-size: 36px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.stats-line {
+  width: 80px;
+  height: 4px;
+  background: #d00000;
+  margin: 10px auto 20px;
+}
+
+.stats-header p {
+  font-size: 18px;
+  color: #e1e1e1;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* Card */
+.stat-card {
+  position: relative;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+
+.stat-card:hover {
+  transform: scale(1.05);
+}
+
+/* Overlay */
+.stat-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom right, rgba(255, 0, 0, 0.2), transparent);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.stat-card:hover .stat-card-overlay {
+  opacity: 1;
+}
+
+/* Backgrounds */
+.red-bg {
+  background: linear-gradient(to bottom right, #c40000, #a00000);
+  color: #fff;
+}
+
+.blue-bg {
+  background: linear-gradient(to bottom right, #0056d6, #0040a8);
+  color: #fff;
+}
+
+/* Inner Elements */
+.stat-icon {
+  margin-bottom: 15px;
+}
+
+.icon-size {
+  width: 50px;
+  height: 50px;
+  opacity: 0.85;
+}
+
+.stat-number {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.stat-label {
+  font-size: 20px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.stat-description {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Bottom Box */
+.stats-bottom-box {
+  margin-top: 60px;
+  padding: 30px;
+  background: linear-gradient(to right, #e8f0ff, #ffe9e9);
+  border-left: 6px solid #0056d6;
+  border-radius: 16px;
+}
+
+.bottom-grid {
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .bottom-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.bottom-grid h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0b3a74;
+  margin-bottom: 8px;
+}
+
+.bottom-grid p {
+  color: #444;
+}

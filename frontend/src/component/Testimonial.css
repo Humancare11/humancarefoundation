@@ -1,0 +1,216 @@
+.testimonial-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 0;
+}
+
+.left-box {
+  width: 35%;
+  background: #f7f3eb;
+  padding: 40px 30px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.rating {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.stars {
+  margin: 10px 0;
+}
+
+.rating-text {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.desc {
+  font-size: 15px;
+  color: #777;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+.users {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.users img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.right-box {
+  width: 60%;
+  position: relative;
+}
+
+.quote {
+  margin-bottom: 15px;
+}
+
+.text {
+  color: #444;
+  font-size: 15px;
+  line-height: 1.7;
+  max-width: 90%;
+}
+
+.author-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.author-img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+.arrows {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.arrows button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+}
+/* ===================== TABLET (992px and below) ===================== */
+@media (max-width: 992px) {
+
+  .testimonial-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .left-box {
+    width: 70%;
+    margin: auto;
+    padding: 35px 25px;
+  }
+
+  .right-box {
+    width: 85%;
+    margin: auto;
+  }
+
+  .text {
+    max-width: 100%;
+    font-size: 15px;
+  }
+
+  .author-row {
+    justify-content: center;
+  }
+
+  .arrows {
+    justify-content: center;
+  }
+}
+
+
+/* ===================== MOBILE (768px and below) ===================== */
+@media (max-width: 768px) {
+
+  .testimonial-section {
+    padding: 20px 0;
+  }
+
+  .left-box {
+    width: 90%;
+    padding: 25px 20px;
+  }
+
+  .rating {
+    font-size: 45px;
+  }
+
+  .stars svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .desc {
+    font-size: 14px;
+  }
+
+  .users img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .right-box {
+    width: 95%;
+  }
+
+  .quote {
+    width: 40px;
+    height: 40px;
+  }
+
+  .text {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .author-img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .arrows button {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+
+/* ===================== SMALL MOBILE (480px and below) ===================== */
+@media (max-width: 480px) {
+
+  .left-box {
+    width: 100%;
+    padding: 20px 15px;
+  }
+
+  .rating {
+    font-size: 38px;
+  }
+
+  .right-box {
+    width: 100%;
+  }
+
+  .text {
+    font-size: 13px;
+  }
+
+  .desc {
+    font-size: 13px;
+  }
+
+  .author-row h3 {
+    font-size: 16px;
+  }
+
+  .arrows button {
+    width: 32px;
+    height: 32px;
+  }
+}
