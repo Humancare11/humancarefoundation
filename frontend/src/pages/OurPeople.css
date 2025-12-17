@@ -69,24 +69,25 @@
 
 /* ================= PEOPLE CARD ================= */
 .people-card {
-  background: white;
+  /* background: white; */
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07); */
   transition: all 0.3s ease;
   position: relative;
+  cursor: pointer;
 }
 
 .people-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); */
 }
 
 /* ================= CARD IMAGE ================= */
 .card-image {
   position: relative;
-  width: 100%;
-  height: 300px;
+  width: 80%;
+  height: 400px;
   overflow: hidden;
 }
 
@@ -94,24 +95,29 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease;
+  /* transition: transform 0.3s ease; */
+  border: 1px solid #0d6efd;
+  border-radius: 12px;
 }
 
-.people-card:hover .card-image img {
+/* .people-card:hover .card-image img {
   transform: scale(1.05);
-}
+} */
 
 /* ================= CARD CONTENT ================= */
 .card-content {
   padding: 30px;
   background: white;
   position: relative;
-  margin-top: -40px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-top: -60px;
+  margin-left: 60px;
+  margin-right: 25px;
   border-radius: 8px;
   box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.08);
   z-index: 2;
+  border: 1px solid #0d6efd;
+  max-width: 20vw !important;
+  max-height: 12vh;
 }
 
 .card-title {
@@ -120,6 +126,7 @@
   color: #1a202c;
   margin-bottom: 12px;
   line-height: 1.3;
+  text-align: center;
 }
 
 .card-description {
@@ -127,6 +134,7 @@
   color: #4a5568;
   line-height: 1.7;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 /* ================= CARD META ================= */
@@ -136,6 +144,7 @@
   gap: 8px;
   font-size: 13px;
   color: #718096;
+  cursor: pointer;
 }
 
 .card-meta .author {
@@ -221,6 +230,185 @@
   }
 }
 
+/* ================= EXECUTIVE TEAM SECTION ================= */
+.executive-people-section {
+  padding: 60px 20px;
+}
+
+.executive-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.executive-section-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a202c;
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.executive-section-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #667eea;
+  margin: 16px auto 0;
+  border-radius: 2px;
+}
+
+/* ================= EXECUTIVE PEOPLE GRID ================= */
+.executive-people-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.executive-people-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* ================= EXECUTIVE PEOPLE CARD ================= */
+.executive-people-card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+.executive-people-card:hover {
+  transform: translateY(-8px);
+}
+
+/* ================= EXECUTIVE CARD IMAGE ================= */
+.executive-card-image {
+  position: relative;
+  width: 80%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.executive-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ border: 1px solid #0d6efd;
+  border-radius: 12px;
+}
+
+/* ================= EXECUTIVE CARD CONTENT ================= */
+.executive-card-content {
+  padding: 30px;
+  background: white;
+  position: relative;
+  margin-top: -60px;
+  margin-left: 60px;
+  margin-right: 25px;
+  border-radius: 8px;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.08);
+  z-index: 2;
+border: 1px solid #0d6efd;
+  max-width: 20vw !important;
+  max-height: 12vh;
+}
+
+.executive-card-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 12px;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.executive-card-description {
+  font-size: 15px;
+  color: #4a5568;
+  line-height: 1.7;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+/* ================= EXECUTIVE CARD META ================= */
+.executive-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #718096;
+  cursor: pointer;
+}
+
+.executive-card-meta .executive-author {
+  color: #5b4cdb;
+  font-weight: 600;
+}
+
+.executive-card-meta .executive-separator {
+  color: #cbd5e0;
+}
+
+.executive-card-meta .executive-categories {
+  color: #5b4cdb;
+  font-weight: 500;
+}
+
+/* ================= EXECUTIVE RESPONSIVE ================= */
+@media (max-width: 1024px) {
+  .executive-people-grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .executive-section-title {
+    font-size: 28px;
+  }
+
+  .executive-people-grid,
+  .executive-people-grid-3 {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .executive-card-image {
+    height: 250px;
+  }
+
+  .executive-card-content {
+    padding: 24px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .executive-card-title {
+    font-size: 20px;
+  }
+
+  .executive-card-description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .executive-section-title {
+    font-size: 24px;
+  }
+
+  .executive-card-image {
+    height: 220px;
+  }
+
+  .executive-card-content {
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
 .team-card h3 {
   font-size: 22px;
   letter-spacing: 1px;
@@ -248,6 +436,299 @@
     font-size: 36px;
   }
 }
+
+/* ================= IMAGE HOVER OVERLAY ================= */
+.card-image,
+.executive-card-image {
+  position: relative;
+  cursor: pointer;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+  opacity: 0;
+  border-radius: 12px;
+}
+
+.card-image:hover .image-overlay,
+.executive-card-image:hover .image-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+}
+
+.read-more-btn {
+  padding: 14px 18px;
+  background: rgba(255, 255, 255, 0.25); /* glass */
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  /* font-size: 30px; */
+  font-weight: bold;
+  cursor: pointer;
+  /* transition: all 0.3s ease; */
+  transform: translateY(10px);
+
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.read-more-btn svg {
+  font-size: 20px;
+}
+
+/* Hover effect */
+.read-more-btn:hover {
+  background: rgba(102, 126, 234, 0.35); /* blurred color */
+  color: white;
+  /* transform: translateY(-2px); */
+  /* box-shadow: 0 6px 16px rgba(102, 126, 234, 0.45); */
+  backdrop-filter: blur(10px);
+}
+
+/* ================= MODAL ================= */
+.person-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* .modal-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white !important;
+  backdrop-filter: blur(4px) !important;
+  border: 1px solid red;
+} */
+
+.modal-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  /* Transparent background so blur is visible */
+  background: rgba(255, 255, 255, 0.2) !important;
+
+  /* Blur effect */
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px); /* Safari support */
+
+  /* border: 1px solid red; */
+}
+
+.section-icon {
+  margin-right: 8px;
+  color: #1a73e8;
+}
+
+.card-icon {
+  margin-right: 6px;
+  color: #444;
+}
+
+.role-icon {
+  margin-right: 6px;
+  color: #777;
+}
+
+.modal-container {
+  position: relative;
+  background: white;
+  border-radius: 16px;
+  max-width: 1000px;
+  width: 100%;
+  max-height: 90vh;
+  overflow: auto;
+  /* box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3); */
+  z-index: 10000;
+  /* border: 1px solid green; */
+  padding: 25px 19px;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 10001;
+}
+
+.modal-close-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+  transform: rotate(90deg);
+}
+
+.modal-body {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+}
+
+.modal-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-left img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.modal-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.modal-right h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a202c;
+  margin: 0;
+}
+
+.modal-role {
+  font-size: 18px;
+  font-weight: 600;
+  color: #667eea;
+  margin: 0;
+}
+
+.modal-description {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #4a5568;
+  margin: 12px 0;
+}
+
+.modal-social {
+  margin-top: 20px;
+}
+
+.modal-social h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a202c;
+  margin-bottom: 12px;
+}
+
+.social-links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  text-decoration: none;
+}
+
+/* circular icon buttons */
+.social-icon {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  background: #eef2ff;
+  color: #3b82f6;
+  border-radius: 50%;
+  font-size: 16px;
+  transition: transform 0.15s ease, background 0.15s ease, color 0.15s ease;
+  border: 1px solid rgba(59,130,246,0.08);
+}
+
+.social-icon:hover {
+  background: #3b82f6;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* ================= MODAL RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .modal-body {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 24px;
+  }
+
+  .modal-left img {
+    max-width: 100%;
+  }
+
+  .modal-right h2 {
+    font-size: 26px;
+  }
+
+  .modal-close-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 24px;
+    top: 12px;
+    right: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-container {
+    margin: 10px;
+  }
+
+  .modal-body {
+    padding: 20px 15px;
+  }
+
+  .modal-right h2 {
+    font-size: 22px;
+  }
+
+  .modal-role {
+    font-size: 16px;
+  }
+
+  .modal-description {
+    font-size: 14px;
+  }
+}
+
 .team-section {
   width: 100%;
   padding: 40px 20px;
