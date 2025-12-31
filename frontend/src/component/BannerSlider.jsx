@@ -10,6 +10,9 @@ import "swiper/css/thumbs";
 import "./BannerSlider.css";
 import Education from "../assets/education.jpg";
 import Medical from "../assets/Medical.jpg";
+import Rural from "../assets/ruralHeathDevelopment/rural.jpg";
+import Healthcare from "../assets/healthCareDevelopment/healthcare.jpg";
+
 
 
 import RightArrow from "../assets/right-arrow.svg";
@@ -30,6 +33,24 @@ const slides = [
     subtitle: "Extending Healing Hands to the Needy",
     title: " Reaching the Needy. Delivering Emergency Care. Protecting Every Life.",
     description: "Dedicated to delivering quality treatment, emergency medical aid, free medication, rural health support, and life-saving care to the underprivileged ensuring that no one is denied healthcare due to poverty, distance, or lack of resources.",
+    button: "Become a Contributor",
+        buttonLink: "#cta"   // ⭐ LINK 2
+
+  },
+   {
+    img: Healthcare,
+    subtitle: "Care and Knowledge Without Boundaries",
+    title: "Compassionate care for vulnerable communities; advancing health education together.",
+    description: "Dedicated to delivering quality healthcare support to those in need, while advancing medical education and organizing inclusive health camps for all ensuring access to treatment, awareness, and preventive care regardless of income, location, or background.",
+    button: "Become a Contributor",
+        buttonLink: "#cta"   // ⭐ LINK 2
+
+  },
+  {
+    img: Rural,
+    subtitle: "Rural Health Development Without Barriers",
+    title: " Reaching rural communities with compassionate, preventive care for healthier living.",
+    description: "Dedicated to improving healthcare access in rural areas through quality medical support, community outreach, and regular health camps—ensuring timely treatment, health education, and preventive care regardless of distance, income, or availability of resources.",
     button: "Become a Contributor",
         buttonLink: "#cta"   // ⭐ LINK 2
 

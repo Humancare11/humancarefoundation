@@ -91,8 +91,17 @@ const AboutUs = () => {
           <p>Your support can transform lives and uplift communities.</p>
 
           <div className="cta-buttons">
-            <button className="btn-primary">Donate Now</button>
-            <button className="btn-outline">Join as Volunteer</button>
+          <a 
+  href="https://pmny.in/KI4pIX0tZoST" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="no-underline"
+>
+  <button className="btn-outline">Become a Contributor</button>
+</a>
+            {/* <button className="btn-primary">Be a Contributor</button> */}
+            <a href="/contact">             <button className="btn-outline">Join as Volunteer</button>
+</a>
           </div>
         </div>
       </section>

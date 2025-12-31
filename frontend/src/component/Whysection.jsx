@@ -50,8 +50,9 @@ const reasons = [
 export default function WhySection() {
   return (
     <section id="why-choose-us" className="why-section">
+              <h2 className="feature-sub-title">Featured Programs</h2>
+ 
       <div className="feature-heading-container">
-        <h2 className="feature-sub-title">Featured Programs</h2>
       </div>
       <div className="why-container">
         <div className="why-header">
@@ -77,7 +78,6 @@ export default function WhySection() {
 
                   <h3>{reason.title}</h3>
                   <p>{reason.description}</p>
-                  <button className="buttons">{reason.button}</button>
                 </div>
               </div>
             );

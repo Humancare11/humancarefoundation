@@ -86,13 +86,22 @@ function Home() {
 
           <div className="involved-cards">
             <div className="involved-card">
-              <h3>Donate</h3>
+              
+              <h3> Donate</h3>
               <p>
                 Your contribution helps us support medical education for
                 deserving students, expand CPR & First Aid awareness, and bring
                 essential healthcare support to underserved families.
               </p>
-              <button className="btn-primary">Donate Now</button>
+              {/* <button className="btn-primary">Donate Now</button> */}
+              <a 
+  href="https://pmny.in/KI4pIX0tZoST" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="no-underline"
+>
+  <button className="btn-outline">Become a Contributor</button>
+</a>
             </div>
 
             <div className="involved-card">
@@ -103,7 +112,8 @@ function Home() {
                 health camps, and spread emergency-awareness skills that save
                 lives.
               </p>
-              <button className="btn-outline">Join as Volunteer</button>
+             
+              <a href="/contact"> <button className="btn-outline">Join as Volunteer</button></a>
             </div>
 
             <div className="involved-card">
@@ -113,7 +123,8 @@ function Home() {
                 health education, emergency preparedness, rural education and
                 health development, and community transformation across regions.{" "}
               </p>
-              <button className="btn-outline">Become a Partner</button>
+                            <a href="/contact"> <button className="btn-outline">Become a Partner</button></a>
+
             </div>
           </div>
         </div>

@@ -118,10 +118,10 @@ Over the past year, our collective efforts have created measurable impact across
         <div className="container">
           <h2>Transparency Matters</h2>
           <p>Access our detailed financial and impact performance report</p>
-
+{/* 
           <a href="#" className="impact-download-btn">
             Download Annual Report
-          </a>
+          </a> */}
         </div>
       </section>
 
